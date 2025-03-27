@@ -1,0 +1,44 @@
+<input id="n1" >
+<input id="n2">
+<button onclick="addfunction()">ADDITION</button>
+<button onclick="subfunction()">SUBTRACTION</button>
+<button onclick="multii()">MULTIPLICATION</button>
+<button onclick="divide()">DIVISION</button>
+<p id="res">RESULT</p>
+
+<script>
+    var b1=document.getElementById("n1")
+    var b2=document.getElementById("n2")
+    var result=document.getElementById("res")
+    function addfunction()
+    {
+        var box1value=Number(b1.value)
+        var box2value=Number(b2.value)
+        var total=box1value+box2value
+        result.textContent=total
+    }
+    function subfunction()
+    {
+        var box1value=Number(b1.value)
+        var box2value=Number(b2.value)
+        var total=box1value-box2value
+        result.textContent=total
+    }
+    function multii()
+    {
+        var box1value=Number(b1.value)
+        var box2value=Number(b2.value)
+        var total=box1value*box2value
+        result.textContent=total
+    }
+    function divide()
+    {
+        var box1value=Number(b1.value)
+        var box2value=Number(b2.value)
+        var total=box1value/box2value
+        result.textContent=total
+    }
+
+
+
+</script>
