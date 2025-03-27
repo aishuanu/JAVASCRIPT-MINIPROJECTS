@@ -1,0 +1,38 @@
+<h1>GUESS THE NUMBER</h1>
+<input id="number">
+<button onclick="check()">CHECK</button>
+<P id="result">GUESS THE NUMBER GUYS...</P>
+<p id="score">SCORE:10</p>
+
+<style>
+    body{
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgb(96, 221, 223) 0%, rgb(227, 196, 130) 100%);
+        background-repeat:repeat;
+        text-align: center;
+        background: fixed;
+    }
+</style>
+
+<script>
+    var number=document.getElementById("number")
+    var result=document.getElementById("result")
+    var score=document.getElementById("score")
+    //it gives 1 to 10 random numbers
+    var random=Math.floor(Math.random()*10)+1
+    var totscore=10
+    function check()
+    {
+        var enternum=number.value
+        if(random==enternum){
+            console.log("RIGHT!!!")
+            alert("very good....You Won....")
+        }
+        else{
+            totscore=totscore-1
+            score.textContent="SCORE: "+totscore
+            result.textContent="Wrong"
+        }
+    }
+
+</script>
