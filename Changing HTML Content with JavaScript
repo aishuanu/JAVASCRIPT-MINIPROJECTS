@@ -1,0 +1,9 @@
+<h1 id="anu">
+    Hello World
+</h1>
+<script>
+    //
+    var a=document.getElementById("anu")
+    console.log(a.textContent)
+    a.textContent="Bye World"
+</script> 
