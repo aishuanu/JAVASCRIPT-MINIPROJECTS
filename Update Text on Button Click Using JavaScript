@@ -1,0 +1,11 @@
+<h1 id="demo">HELLO WORLD</h1>
+<button onclick="hii()">change</button>
+
+<script>
+    var a=document.getElementById("demo")
+    console.log(a.textcontent)
+    function hii()
+    {
+    a.textContent="THE WORLD IS WONDERFUL"
+    }
+</script>
