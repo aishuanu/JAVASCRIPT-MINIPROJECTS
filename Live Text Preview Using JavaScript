@@ -1,0 +1,27 @@
+<h5>AUTOMATIC TYPING...</h5>
+<input id="one" onkeyup="update()">
+<h1 id="result"></h1>
+<style>
+    body{
+        text-align: center;
+        font-size: 45px;
+    font-weight: 500;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    background-color: rgb(182, 220, 231);
+        
+    }
+    
+</style>
+
+<script>
+    var one=document.getElementById("one")
+    var result=document.getElementById("result")
+
+    function update()
+    {
+        result.textContent=one.value
+    }
+
+
+</script>
