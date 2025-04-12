@@ -1,0 +1,16 @@
+<button id="one" onclick="change()">Add </button>
+<div id="hell"></div>
+<script>
+    //var one=document.getElementById("one")
+    var hell=document.getElementById("hell")
+    //create new element
+    
+    function change()
+    {
+        var h1=document.createElement("h1")
+        h1.textContent="hello"
+        hell.append(h1)
+    }
+
+
+</script>
